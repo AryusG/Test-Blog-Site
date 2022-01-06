@@ -6,20 +6,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" href="../static/css/styles.css">
 </head>
+
 <body>
 <div class="wrapper">
     <div class="top">
         <div class="title"><h1>My Blog</h1></div>
            </div>
         <div class="content">
-            <div class="card">
-                <h2>Title</h2>
-                <p>Post Body</p>
-            </div>
+        
+        <div class="card">
+            <h2>{{ json[index]['title'] }}</h2>
+            <p>{{ json[index]['body'] }}</p>
+        </div>
 
     </div>
 </div>
 </body>
+
 <footer>
     <p>Made with ♥️ in London.</p>
 </footer>
